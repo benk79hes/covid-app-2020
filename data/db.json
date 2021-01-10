@@ -1,0 +1,16 @@
+{
+    "vd": {
+        "name": {
+            "fr": "Vaud",
+            "en": "Vaud",
+            "de": "Waadt",
+            "it": "Vodese"
+        },
+        "rules": [
+            {
+                "pic": "1",
+                "text": "Hello"
+            }
+        ]
+    }
+}
