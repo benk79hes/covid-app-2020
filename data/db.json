@@ -1,6 +1,6 @@
 {
     "canton": {
-        "cantonId1": {
+        "VD": {
             "name": {
                 "fr": "Vaud",
                 "en": "Vaud",
@@ -18,7 +18,7 @@
                 "ruleId11"
             ]
         },
-        "cantonId2": {
+        "VS": {
             "name": {
                 "fr": "Valais",
                 "en": "Valais",
@@ -36,7 +36,7 @@
                 "ruleId11"
             ]
         },
-        "cantonId3": {
+        "BE": {
             "name": {
                 "fr": "Berne",
                 "en": "Bern",
@@ -54,12 +54,12 @@
                 "ruleId11"
             ]
         },
-        "cantonId4": {
+        "GE": {
             "name": {
-                "fr": "Bâle",
-                "en": "Basel",
-                "de": "Basel",
-                "it": "Basilea"
+                "fr": "Genève",
+                "en": "Geneva",
+                "de": "Genf",
+                "it": "Ginevra"
             },
             "rules": [
                 "ruleId1",
@@ -72,7 +72,7 @@
                 "ruleId11"
             ]
         },
-        "cantonId5": {
+        "ZH": {
             "name": {
                 "fr": "Zurich",
                 "en": "Zurich",
@@ -136,3 +136,5 @@
                 "image": "cable-car_red"
             }
         }
+    }
+}
