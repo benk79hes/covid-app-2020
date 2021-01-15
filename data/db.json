@@ -8,9 +8,7 @@
                 "it": "Vodese"
             },
             "rules": [
-                "ruleId1",
-                "ruleId3",
-                "ruleId4",
+                "ruleId2",
                 "ruleId7",
                 "ruleId8",
                 "ruleId9",
@@ -27,8 +25,6 @@
             },
             "rules": [
                 "ruleId2",
-                "ruleId3",
-                "ruleId4",
                 "ruleId7",
                 "ruleId8",
                 "ruleId9",
@@ -44,8 +40,7 @@
                 "it": "Berna"
             },
             "rules": [
-                "ruleId1",
-                "ruleId3",
+                "ruleId2",
                 "ruleId4",
                 "ruleId7",
                 "ruleId8",
@@ -56,85 +51,80 @@
         },
         "GE": {
             "name": {
-                "fr": "Genève",
+                "fr": "Geneve",
                 "en": "Geneva",
                 "de": "Genf",
                 "it": "Ginevra"
             },
             "rules": [
-                "ruleId1",
-                "ruleId3",
-                "ruleId4",
+                "ruleId2",
                 "ruleId7",
                 "ruleId8",
                 "ruleId9",
-                "ruleId10",
-                "ruleId11"
+                "ruleId10"
             ]
         },
         "ZH": {
             "name": {
                 "fr": "Zurich",
                 "en": "Zurich",
-                "de": "Zürich",
+                "de": "Zurich",
                 "it": "Zurigo"
             },
             "rules": [
-                "ruleId1",
-                "ruleId3",
-                "ruleId4",
+                "ruleId2",
                 "ruleId7",
                 "ruleId8",
                 "ruleId9",
                 "ruleId10",
                 "ruleId11"
             ]
+        }
+    },
+    "rules": {
+        "ruleId1": {
+            "description": "Interdiction des rassemblements de plus de 10 personnes",
+            "image": "people_red.svg"
         },
-        "rules": {
-            "ruleId1": {
-                "description": "Interdiction des rassemblements de plus de 10 personnes",
-                "image": "people_red.svg"
-            },
-            "ruleId2": {
-                "description": "Interdiction des rassemblements de plus de 5 personnes",
-                "image": "people_red.svg"
-            },
-            "ruleId3": {
-                "description": "Interdiction des rassemblements de plus de 30 personnes",
-                "image": "people_red.svg"
-            },
-            "ruleId4": {
-                "description": "Interdiction des rassemblements de plus de 100 personnes",
-                "image": "people_red.svg"
-            },
-            "ruleId5": {
-                "description": "Restaurant fermé après 19h",
-                "image": "restaurant_red"
-            },
-            "ruleId6": {
-                "description": "Restaurant fermé après 22h",
-                "image": "restaurant_red"
-            },
-            "ruleId7": {
-                "description": "Masques obligatoires",
-                "image": "medical-mask_red"
-            },
-            "ruleId8": {
-                "description": "Télétravail obligatoire",
-                "image": "laptop_red"
-            },
-            "ruleId9": {
-                "description": "Fermeture des bars, restaurants, musées, lieux de loisirs",
-                "image": "padlock_red"
-            },
-            "ruleId10": {
-                "description": "Chant : seulement en famille",
-                "image": "music_red"
-            },
-            "ruleId11": {
-                "description": "Règles pour les domaines skiables",
-                "image": "cable-car_red"
-            }
+        "ruleId2": {
+            "description": "Interdiction des rassemblements de plus de 5 personnes",
+            "image": "people_red.svg"
+        },
+        "ruleId3": {
+            "description": "Interdiction des rassemblements de plus de 30 personnes",
+            "image": "people_red.svg"
+        },
+        "ruleId4": {
+            "description": "Interdiction des rassemblements de plus de 100 personnes",
+            "image": "people_red.svg"
+        },
+        "ruleId5": {
+            "description": "Restaurant fermé après 19h",
+            "image": "restaurant_red"
+        },
+        "ruleId6": {
+            "description": "Restaurant fermé après 22h",
+            "image": "restaurant_red"
+        },
+        "ruleId7": {
+            "description": "Masques obligatoires",
+            "image": "medical-mask_red"
+        },
+        "ruleId8": {
+            "description": "Télétravail obligatoire",
+            "image": "laptop_red"
+        },
+        "ruleId9": {
+            "description": "Fermeture des bars, restaurants, musées, lieux de loisirs",
+            "image": "padlock_red"
+        },
+        "ruleId10": {
+            "description": "Chant : seulement en famille",
+            "image": "music_red"
+        },
+        "ruleId11": {
+            "description": "Règles pour les domaines skiables",
+            "image": "cable-car_red"
         }
     }
 }

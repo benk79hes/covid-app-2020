@@ -1,119 +1,51 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style type="text/css">
-
-            @font-face {
-                font-family: "BIG JOHN";
-                src: url("fonts/BIG-JOHN.otf") format("opentype");
-            }
-
-            @font-face {
-                font-family: "Slim Joe";
-                src: url("fonts/Slim-Joe.otf") format("opentype");
-            }
-
-            html {
-                height: 100%;
-                padding: 0;
-                margin: 0;
-            }
-
-            body {
-                min-height: 100%;
-                padding: 0;
-                margin: 0;
-                /* display: flex;
-                flex-direction: column;
-                align-items: center; */
-                background-color: #34495E;
-                overflow-x: hidden;
-                position: relative;
-                font-family: "Slim Joe";
-                text-transform: lowercase;
-            }
-
-            header {
-                color: #FFF;
-                padding-left: 200px;
-            }
-
-            .container-outer {
-                margin: 0 auto;
-                max-width: 780px;
-            }
-
-            .container {
-
-                position: relative;
-            }
-
-            .container-inner {
-                display: flex;
-                padding: 20px;
-                flex-direction: column;
-            }
-
-
-            .container:before {
-                content: "";
-                display: block;
-                position: absolute;
-                z-index: -1;
-                width: 400px;
-                height: 400px;
-                background-image: url("./covid_red.svg");
-                background-repeat: no-repeat;
-                left: -250px; 
-                top: 80px;
-            }
-
-            .lang-menu {
-                text-align: right;
-            }
-
-            .lang-menu a {
-                color: #fff;
-                text-decoration: none;
-            }
-
-            .lang-menu a:hover {
-                text-decoration: underline;
-            }
-
-            .content {
-                background-color: #FFF;
-                border: 2px solid #000;
-                border-radius: 30px;
-                padding: 30px;
-                width:200px;
-                margin: 50px auto;
-            }
-
-            .content a.button{
-                display: block;;
-                border: 2px solid #000;
-                border-radius: 15px;
-                line-height: 30px;
-                padding: 0 30px;
-                margin-bottom: 15px;
-            }
-
-            .content a.button:last-child {
-                margin-bottom: 0;
-            }
+        <link href="./css/style.css" rel="stylesheet" type="text/css" />
         
-        </style>
 
         <script src="./js/jquery-3.5.1.min.js"></script>
 
         <script>
+            
+
+
+            $(document).ready(function() {
+                var template = document.querySelector('#rule-template');
+                var content = document.querySelector('.content-container');
+
+                const urlParams = new URLSearchParams(window.location.search);
+                const canton = urlParams.get('canton');
+                const canton_name = urlParams.get('canton-name');
+                $('.title-norme').html('Norme COVID - ' + canton_name)
+                fetch('./data/db.json')
+                .then(response => response.json())
+                .then(data => {
+                    
+                    /**
+                     *  Pour chaque règle 
+                     */
+                    
+                    data.canton[canton].rules.forEach(r => {
+                        var description = data.rules[r].description;
+                        var image = data.rules[r].image;
+                        var clone = document.importNode(template.content, true);
+                        console.log(clone)
+                        $('p', $(clone)).html(description);
+                        $('img', $(clone)).attr('src', './images/' + image);
+                        content.appendChild(clone);
+
+                    })
 
 
 
-            $(document).ready(function(){
 
-
+                    /*var clone = document.importNode(template.content, true);
+                    
+                    content.appendChild(clone);
+                    $('p', $(clone)).html('test');*/
+                })
+                
             });
 
         </script>
@@ -129,21 +61,24 @@
                             <a href="">IT</a> |
                             <a href="">EN</a>
                         </div>
-                        <h1>normes covid</h1>
+                        <h1 class="title title-norme">normes covid</h1>
                         <div class="subtitle">07/01/2021</div>
                     </header>
 
-                    <div class="content-container">
-                        <p>fewafewfwf</p>
-                        <p>fewafewfwf</p>
-                        <p>fewafewfwf</p>
-                        <p>fewafewfwf</p>
+                    <div class="content-container content rules-content">
                     </div>
 
                 </div>
 
             </div>
         </div>
-        
+        <template id="rule-template">
+            <div class="rules">
+                <img src="" />
+                <p>
+
+                </p>
+            </div>
+        </template>
     </body>
 </html>

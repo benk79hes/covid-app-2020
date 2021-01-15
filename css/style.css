@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "BIG JOHN";
+    src: url("fonts/BIG-JOHN.otf") format("opentype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #34495E;
+    overflow-x: hidden;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    color: #FFF;
+}
+
+.container-outer {
+    margin: 0 auto;
+    max-width: 780px;
+}
+
+.container {
+
+    position: relative;
+}
+
+.container-inner {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.title, .subtitle {
+    font-family: "BIG JOHN";
+    text-align: center;
+}
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    z-index: -1;
+    width: 800px;
+    height: 800px;
+    background-image: url(../covid_red.svg);
+    background-repeat: no-repeat;
+    left: -400px;
+    top: 80px;
+}
+
+.lang-menu {
+    text-align: right;
+}
+
+.lang-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.lang-menu a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    background-color: #FFF;
+    border: 2px solid #000;
+    border-radius: 30px;
+    padding: 30px;
+    width:200px;
+    margin: 50px auto;
+}
+
+.content a.button{
+    color: #000;
+    text-decoration: none;
+    display: block;;
+    border: 2px solid #000;
+    border-radius: 15px;
+    line-height: 30px;
+    padding: 0 30px;
+    margin-bottom: 15px;
+}
+.content a.button:hover{
+    text-decoration: underline;
+}
+
+.content a.button:last-child {
+    margin-bottom: 0;
+}
+
+.rules img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.rules-content {
+    width: auto!important;
+
+}
+
+.rules {
+    display: flex;
+    margin-bottom: 10px;
+}
