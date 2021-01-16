@@ -22,7 +22,7 @@
                 const urlParams = new URLSearchParams(window.location.search);
                 const canton = urlParams.get('canton');
                 const canton_name = urlParams.get('canton-name');
-                $('.title-norme').html('Norme COVID - ' + canton_name)
+                $('.title-norme').html('Normes COVID - ' + canton_name)
                 fetch('./data/db.json')
                 .then(response => response.json())
                 .then(data => {
