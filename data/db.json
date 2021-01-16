@@ -100,31 +100,31 @@
         },
         "ruleId5": {
             "description": "Restaurant fermé après 19h",
-            "image": "restaurant_red"
+            "image": "restaurant_red.svg"
         },
         "ruleId6": {
             "description": "Restaurant fermé après 22h",
-            "image": "restaurant_red"
+            "image": "restaurant_red.svg"
         },
         "ruleId7": {
             "description": "Masques obligatoires",
-            "image": "medical-mask_red"
+            "image": "medical-mask_red.svg"
         },
         "ruleId8": {
             "description": "Télétravail obligatoire",
-            "image": "laptop_red"
+            "image": "laptop_red.svg"
         },
         "ruleId9": {
             "description": "Fermeture des bars, restaurants, musées, lieux de loisirs",
-            "image": "padlock_red"
+            "image": "padlock_red.svg"
         },
         "ruleId10": {
             "description": "Chant : seulement en famille",
-            "image": "music_red"
+            "image": "music_red.svg"
         },
         "ruleId11": {
             "description": "Règles pour les domaines skiables",
-            "image": "cable-car_red"
+            "image": "cable-car_red.svg"
         }
     }
 }
